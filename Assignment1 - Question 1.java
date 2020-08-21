@@ -12,7 +12,7 @@ class solution
 			if (pattern.charAt(i) == pattern.charAt(l)) 
 			{ 
 				l++; 
-				lps[i] = ln; 
+				lps[i] = l; 
 				i++; 
 			} 
 			else 
@@ -38,7 +38,7 @@ class solution
 		int lps[] = new int[m]; 
 		int j = 0; 
 
-		lpsarray(pattern,m,lps); 
+		lpsarr(pattern,m,lps); 
 
 		int i = 0, count = 0, next_i = 0; 
 		
@@ -80,7 +80,7 @@ class solution
 		System.out.println("Enter the pattern to be searched for ");
 		String str2 = obj.nextLine();
 		
-		int count = new Q1().search(str1,str2); 
+		int count = new solution().search(str1,str2); 
 		System.out.println(count); 
 	}
 }
