@@ -6,7 +6,6 @@ class solution
 	{ 
 		int l = 0, i=1; 
 		lps[0] = 0;
-
 		while (i < m) 
 		{ 
 			if (pattern.charAt(i) == pattern.charAt(l)) 
@@ -34,14 +33,10 @@ class solution
 	{ 
 		int m = pattern.length(); 
 		int n = text.length(); 
-
 		int lps[] = new int[m]; 
 		int j = 0; 
-
 		lpsarr(pattern,m,lps); 
-
 		int i = 0, count = 0, next_i = 0; 
-		
 		while (i < n) 
 		{ 
 			if (pattern.charAt(j) == text.charAt(i)) 
@@ -53,12 +48,10 @@ class solution
 			{ 
 				j = lps[j-1]; 
 				count++; 
-
 				if (lps[j]!=0) 
 					i = ++next_i; 
 				j = 0; 
 			} 
-
 			else if (i < n && pattern.charAt(j) != text.charAt(i)) 
 			{ 
 				if (j != 0) 
@@ -73,13 +66,10 @@ class solution
 	public static void main(String args[]) 
 	{ 
 		Scanner obj = new Scanner(System.in);
-		
 		System.out.println("Enter text ");
 		String str1 = obj.nextLine();
-		
 		System.out.println("Enter the pattern to be searched for ");
 		String str2 = obj.nextLine();
-		
 		int count = new solution().search(str1,str2); 
 		System.out.println(count); 
 	}
