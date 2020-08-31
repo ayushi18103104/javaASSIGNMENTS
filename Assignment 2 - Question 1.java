@@ -14,29 +14,26 @@ public class mySolution
 		char str1[] = inp1.toCharArray();
 		char str2[] = inp2.toCharArray();
 		
-		
-		int flag = 1;
-		
 		if(inp1.length() != inp2.length())
 		{
 			System.out.println("Not Equal");
 		}
 		else
 		{
+			int flag = 1;
 			for(int i=0;i<inp1.length();i++)
 			{
 				if(str1[i] != str2[i]) 
 					flag = 0;
 			}
-		}
-		
-		if(flag == 1)
-		{
-			System.out.println("Equal Strings");
-		}
-		else
-		{
-			System.out.println("Not Equal");
+			if(flag == 1)
+			{
+				System.out.println("Equal Strings");
+			}
+			else
+			{
+				System.out.println("Not Equal");
+			}
 		}
 		
 		
