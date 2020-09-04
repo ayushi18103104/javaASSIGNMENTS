@@ -17,7 +17,7 @@ public class solution
 	sum+=n;
 	}
 	if(sum!=(long)n*(long)n)
-	System.out.println("Sum= " +sum+ ",n= " +n + " i.e limitation of system ");
+	System.out.println("Sum= " +sum+ ",n= " +n + " limitation of system ");
 	if(sum==(long)n*(long)n)
 		System.out.println("Sum= " +sum+ ",n= " +n);
 	}
