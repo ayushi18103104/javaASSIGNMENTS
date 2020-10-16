@@ -55,7 +55,7 @@ class A1 {
 				
 			}
 		}
-		return count;
+		return cnt;
 	}
 	
 	public static void main(String[] args){
