@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>A5</title>
+	</head>
+
+	<body>
+		<form>
+			<label>Number of lines</label>
+			<input type="text" id="n" name="n">
+			<input type="submit" value="Submit" id="myButton">
+		</form>
+	</body>
+
+	<script>
+
+		document.getElementById("myButton").addEventListener("click", function() {
+
+			var n = document.getElementById("n").value;
+
+			var i;
+			var j;
+			
+			for(i=0;i<n;i++) {
+
+				for(j=n-i-1; j>0; j--) {
+
+					document.write("&nbsp&nbsp");
+				}
+
+				for(j=0; j<(2*i+1); j++) {
+
+					if(j==0 && i==0) {
+						document.write("*");
+					}
+					else {
+						document.write("0");
+					}
+				}
+				document.write("<br>");
+			}        
+		}, false);
+	</script>
+</html>
